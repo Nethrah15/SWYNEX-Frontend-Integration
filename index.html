@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Expense Tracker - SWYNEX</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>💰 Expense Tracker</h1>
+    <p>SWYNEX Task 3 - Frontend Integration</p>
+
+    <!-- Add Form -->
+    <form id="expenseForm">
+      <input type="text" id="title" placeholder="Title - e.g. Lunch" required>
+      <input type="text" id="category" placeholder="Category - e.g. Food" required>
+      <input type="number" id="amount" placeholder="Amount" required>
+      <button type="submit">Add Expense</button>
+    </form>
+
+    <!-- Loading / Error -->
+    <p id="loading" style="display:none;">Loading expenses...</p>
+    <p id="error" style="display:none; color:red;"></p>
+
+    <!-- List -->
+    <h2>Your Expenses</h2>
+    <ul id="expenseList"></ul>
+    <h3 id="total">Total: ₹0</h3>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
